@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Mapa
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Nombre</ion-label>
+    <ion-input [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Apellido</ion-label>
+    <ion-input [(ngModel)]="apellido"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Latitud</ion-label>
+    <ion-input type="number" [(ngModel)]="latitud"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Longitud</ion-label>
+    <ion-input type="number" [(ngModel)]="longitud"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="mostrarMapa()">Siguiente</ion-button>
+</ion-content>
